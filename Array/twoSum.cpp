@@ -1,19 +1,20 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
 using namespace std;
 
 //write a function to return the all indexs of such a pair that sums up to target
 
 vector<pair<int, int>> twoSum(vector<int> &nums, int target) {
     vector<pair<int,int>> ans;
-
+    sort(nums.begin(), nums.end());
     int leftPtr = 0;
     int rightPtr = nums.size() - 1;
 
     while(leftPtr < rightPtr) {
         int sum = nums[leftPtr] + nums[rightPtr];
         if(sum == target) {
-            ans.push_back({leftPtr,rightPtr});
+            ans.push_back({nums[leftPtr],nums[rightPtr]});
             leftPtr++;
             rightPtr--;
         }
