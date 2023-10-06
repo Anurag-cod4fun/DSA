@@ -3,11 +3,16 @@
 
 **Problem: Finding Triplets with a Target Sum**
 
-You are given an array of integers, and your task is to find all unique triplets in the array that sum up to a given target value. Each triplet should be represented by a vector of three integers.
+You are given an array of integers, and your task is to find all unique triplets 
+in the array that sum up to a given target value. Each triplet should be represented 
+by a vector of three integers.
 
-Write a function `threeSum` that takes an array of integers `nums` and an integer `target` as parameters, and returns a vector of vectors containing the unique triplets that sum up to the target.
+Write a function `threeSum` that takes an array of integers `nums` and an integer 
+`target` as parameters, and returns a vector of vectors containing the unique triplets 
+that sum up to the target.
 
-Consequently, implement the `main` function to take the array elements, the target sum, and output the triplets.
+Consequently, implement the `main` function to take the array elements, the target 
+sum, and output the triplets.
 
 Function Signature:
 ```cpp
@@ -16,12 +21,15 @@ vector<vector<int>> threeSum(vector<int>& nums, int target);
 
 **Input:**
 - An integer `n` (1 ≤ n ≤ 1000): the size of the input array.
-- A list of `n` integers `nums[i]` (-1000 ≤ nums[i] ≤ 1000): representing the elements of the array.
+- A list of `n` integers `nums[i]` (-1000 ≤ nums[i] ≤ 1000): representing the elements 
+  of the array.
 - An integer `target` (-2000 ≤ target ≤ 2000): the target sum.
 
 **Output:**
-- A vector of vectors, where each inner vector represents a unique triplet (in ascending order) that sums up to the target.
-- The output vector should be sorted in non-descending order of the first element in each triplet.
+- A vector of vectors, where each inner vector represents a unique triplet (in ascending order) 
+  that sums up to the target.
+- The output vector should be sorted in non-descending order of the first element in 
+  each triplet.
 - Each triplet should be unique.
 
 **Example:**
@@ -37,8 +45,11 @@ Output:
 ```
 
 **Note:**
-- Each triplet should be unique, meaning there should be no duplicate triplets in the output.
-- The order of elements within a triplet does not matter, but the order of the triplets themselves does matter. The output should be sorted based on the first element of each triplet in non-descending order.
+- Each triplet should be unique, meaning there should be no duplicate triplets 
+in the output.
+- The order of elements within a triplet does not matter, but the order of the 
+triplets themselves does matter. The output should be sorted based on the first 
+element of each triplet in non-descending order.
 
 ---
 
